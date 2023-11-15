@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>03.08 - Keyboard Event</title>
+
+    <link rel="stylesheet" href="css/keyboard-events.css">
+
+</head>
+<body>
+
+    <div class="container light-mode">
+
+        <h1>03.08 - Keyboard Events</h1>
+        <h2>Press <span>c</span> for random background color
+        <br>Press <span>d</span> to toggle Dark Mode
+        <br>Press <span>f</span> to toggle Font.
+        <br>Press <span>p</span> or <span>n</span> for random 4-digit PIN
+        <br>Press <- Arrows -> to move ship
+        </h2>
+
+        <hr>
+
+        <ul>
+
+            <li>
+                The pressing of a key is a <span>keydown</span> event.
+            </li>
+
+            <li>
+                The release of a key is a <span>keyup</span> event.
+            </li> 
+
+            <li>
+                As with any event, a keyboard event can call a function.
+            </li>
+
+            <li>
+                Keyboard events are listened for by the document.
+            </li>
+            
+            <li>Syntax: 
+                <span>document.addEventListener('keyup', getKey)</span>
+            </li>
+            
+            <li>
+                The <span>event.key</span> property returns the name of the key
+            </li>
+
+            <li>
+                The <span>event.code</span> property returns the key code
+            </li>
+
+            <li>
+                If the key is the one we are listening for, run some function
+            </li>
+
+        </ul>
+
+        <div id="key-box"></div>
+        <div id="pin-box"></div>
+ 
+    </div>
+
+    <img src="images/galaxian-spaceship.png" id="space-ship">
+
+
+    <!-- START .js -->
+    <!-- <script src="js/03.08-Keyboard-Event-Set-CSS-START.js"></script> -->
+    
+    <!-- PROG .js -->
+    <script src="js/03.08-Keyboard-Event-Set-CSS-PROG.js"></script>
+
+    <!-- FINAL .js -->
+    <!-- <script src="js/03.08-Keyboard-Event-Set-CSS-FINAL.js"></script> -->
+    
+</body>
+</html>
